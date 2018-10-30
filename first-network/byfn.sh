@@ -525,6 +525,8 @@ if [ "${MODE}" == "up" ]; then
   networkUp
 elif [ "${MODE}" == "down" ]; then ## Clear the network
   networkDown
+elif [ "${MODE}" == "generateCerts" ]; then ## Generate Artifacts
+  generateCerts
 elif [ "${MODE}" == "generate" ]; then ## Generate Artifacts
   generateCerts
   replacePrivateKey

@@ -10,7 +10,7 @@ set -e
 # don't rewrite paths for Windows Git Bash users
 export MSYS_NO_PATHCONV=1
 starttime=$(date +%s)
-LANGUAGE=${1:-"golang"}
+LANGUAGE=node
 CC_SRC_PATH=github.com/fabcar/go
 if [ "$LANGUAGE" = "node" -o "$LANGUAGE" = "NODE" ]; then
 	CC_SRC_PATH=/opt/gopath/src/github.com/fabcar/node

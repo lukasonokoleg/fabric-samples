@@ -1,0 +1,1 @@
+peer channel create -o orderer.cbbc.lt:7050 -c cbbcchannel -f /etc/hyperledger/configtx/channel.tx --tls --cafile $CORE_ORDERER_CA_FILE

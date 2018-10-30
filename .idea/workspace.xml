@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92ef1bf4-fe69-416b-b28a-c39eb44df05f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cbbc-network/configtx.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/create_cbbc_channel.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/crypto-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/docker-compose-ca.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/docker-compose-cli.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/generate.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/installCompound.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/stop.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-network/teardown.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-rest-api/api/hlf-api/CompoundService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-rest-api/api/hlf-api/FabricHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-rest-api/installCompound.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cbbc-rest-api/installProductConfiguration.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chaincode/cbbc/packages/node/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chaincode/cbbc/packages/node/packages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chaincode/cbbc/products/node/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chaincode/cbbc/products/node/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/create_channel.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/docker-compose-ca.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/docker-compose-cli.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/installCompounds.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/installPackages.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/installProducts.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/restart.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-network/uploadData.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitreview" beforeDir="false" afterPath="$PROJECT_DIR$/.gitreview" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MAINTAINERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/MAINTAINERS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/create-channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/create-channel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/install-chaincode.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/install-chaincode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/instantiate-chaincode.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/instantiate-chaincode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/invoke-transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/invoke-transaction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/join-channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/join-channel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/app/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/app/query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/signcerts/peer1.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/signcerts/peer1.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/signcerts/peer0.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/signcerts/peer0.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/signcerts/peer1.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/signcerts/peer1.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/admincerts/User1@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/admincerts/User1@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/User1@org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/User1@org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/cryptogen.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/cryptogen.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/genesis.block" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/genesis.block" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/channel/mychannel.tx" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/channel/mychannel.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/network-config-aws.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/network-config-aws.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/network-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/network-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/org1.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/org1.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/org2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/org2.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/src/github.com/example_cc/go/example_cc.go" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/src/github.com/example_cc/go/example_cc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/src/github.com/example_cc/node/example_cc.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/src/github.com/example_cc/node/example_cc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/artifacts/src/github.com/example_cc/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/artifacts/src/github.com/example_cc/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/api/chaincode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/api/chaincode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/api/channel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/api/channel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/api/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/api/users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/api/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/api/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/app_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/app_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/lib/chaincode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/lib/chaincode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/lib/channel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/lib/channel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/lib/helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/lib/helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/lib/network-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/lib/network-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/types/fabric-ca-client/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/types/fabric-ca-client/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance-transfer/typescript/types/fabric-client/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/balance-transfer/typescript/types/fabric-client/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/.env" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/config/channel.tx" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/config/channel.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/config/genesis.block" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/config/genesis.block" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/a0606a4a860a1e31c90a23788da6f3b6b74925ed0d23061af4899409ba46ae6a_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/4d2f776c0fef8eac3f460a7c3558dc7859c4fe458e262e674a6c23f242ea33d1_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/8d2186556c85d515e737d0c0da8d0d7672785b685cb503bcb95e53dcc279fba7_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/1deeab5433fa6e5f045eb763109d6165268fba153211af1281f00d45f54b1022_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/4239aa0dcd76daeeb8ba0cda701851d14504d31aad1b2ddddbac6a57365e497c_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/46be1d569fe68f33e517c9e0072a0ccfbfb42727480fb8c8d0223af321a7893d_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/ed3fd82393e95fc2c475afc113c8d2c591f745d1babc4d6d9cce0a1acc168acb_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/cd96d5260ad4757551ed4a5a991e62130f8008a0bf996e4e4b84cd097a747fec_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/c75bd6911aca808941c3557ee7c97e90f3952e379497dc55eb903f31b50abc83_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/generate.sh" beforeDir="false" afterPath="$PROJECT_DIR$/basic-network/generate.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/docker-compose-simple.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/docker-compose-simple.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/msp/admincerts/admincert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/msp/admincerts/admincert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/msp/cacerts/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/msp/cacerts/cacert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/msp/signcerts/peer.pem" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/msp/signcerts/peer.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/msp/tlscacerts/tlsroot.pem" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/msp/tlscacerts/tlsroot.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/msp/tlsintermediatecerts/tlsintermediate.pem" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/msp/tlsintermediatecerts/tlsintermediate.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/myc.tx" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/myc.tx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode-docker-devmode/orderer.block" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode-docker-devmode/orderer.block" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/abac.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/abac.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/clone.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/clone.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/discard.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/discard.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/equal.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/equal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/extensions.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/extensions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/lib.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/lib.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/message_set.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/message_set.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/pointer_reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/pointer_reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/properties.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/properties.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/text.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/text.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/text_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/golang/protobuf/proto/text_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/common/attrmgr/attrmgr.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/common/attrmgr/attrmgr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/core/chaincode/lib/cid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/core/chaincode/lib/cid/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/core/chaincode/lib/cid/cid.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/core/chaincode/lib/cid/cid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/core/chaincode/lib/cid/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/hyperledger/fabric/core/chaincode/lib/cid/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/appveyor.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/github.com/pkg/errors/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/abac/go/vendor/vendor.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/abac/go/vendor/vendor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/chaincode_example02/go/chaincode_example02.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/chaincode_example02/go/chaincode_example02.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/chaincode_example02/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/chaincode_example02/java/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/chaincode_example02/java/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/chaincode_example02/java/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/chaincode_example02/java/src/main/java/org/hyperledger/fabric/example/SimpleChaincode.java" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/chaincode_example02/java/src/main/java/org/hyperledger/fabric/example/SimpleChaincode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/chaincode_example02/node/chaincode_example02.js" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/chaincode_example02/node/chaincode_example02.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/chaincode_example02/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/chaincode_example02/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/fabcar/go/fabcar.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/fabcar/go/fabcar.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/fabcar/node/fabcar.js" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/fabcar/node/fabcar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/fabcar/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/fabcar/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02/go/META-INF/statedb/couchdb/indexes/indexOwner.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02/go/META-INF/statedb/couchdb/indexes/indexOwner.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02/go/marbles_chaincode.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02/go/marbles_chaincode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02/node/META-INF/statedb/couchdb/indexes/indexOwner.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02/node/META-INF/statedb/couchdb/indexes/indexOwner.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02/node/marbles_chaincode.js" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02/node/marbles_chaincode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02_private/collections_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02_private/collections_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02_private/go/META-INF/statedb/couchdb/collections/collectionMarbles/indexes/indexOwner.json" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02_private/go/META-INF/statedb/couchdb/collections/collectionMarbles/indexes/indexOwner.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/marbles02_private/go/marbles_chaincode_private.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/marbles02_private/go/marbles_chaincode_private.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/sacc/sacc.go" beforeDir="false" afterPath="$PROJECT_DIR$/chaincode/sacc/sacc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/enrollAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/enrollAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/invoke.js" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/invoke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/registerUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/registerUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabcar/startFabric.sh" beforeDir="false" afterPath="$PROJECT_DIR$/fabcar/startFabric.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric-ca/.env" beforeDir="false" afterPath="$PROJECT_DIR$/fabric-ca/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric-ca/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/fabric-ca/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/.env" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/base/docker-compose-base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/base/docker-compose-base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/base/peer-base.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/base/peer-base.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/byfn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/byfn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/channel-artifacts/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/channel-artifacts/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/crypto-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/crypto-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/docker-compose-cli.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/docker-compose-cli.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/docker-compose-couch-org3.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/docker-compose-couch-org3.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/docker-compose-couch.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/docker-compose-couch.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/docker-compose-e2e-template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/docker-compose-e2e-template.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/docker-compose-org3.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/docker-compose-org3.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/org3-artifacts/configtx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/org3-artifacts/configtx.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/org3-artifacts/org3-crypto.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/org3-artifacts/org3-crypto.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-network/scripts/capabilities.json" beforeDir="false" afterPath="$PROJECT_DIR$/first-network/scripts/capabilities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high-throughput/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/high-throughput/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high-throughput/chaincode/high-throughput.go" beforeDir="false" afterPath="$PROJECT_DIR$/high-throughput/chaincode/high-throughput.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high-throughput/scripts/setclienv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/high-throughput/scripts/setclienv.sh" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chaincode/cbbc/compounds/node/compound.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-184">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>elated_poitras</find>
+      <find>COMPOSE-file</find>
+      <find>COMPOSE_FILE=</find>
+      <find>peer</find>
+      <find>chaincode</find>
+      <find>channe</find>
+      <find>channel</find>
+      <find>CHANNEL_NAME</find>
+      <find>generateChannelArtifacts</find>
+      <find>ChannelDefaults</find>
+      <find>OrdererCapabilities</find>
+      <find>OrdererCapa</find>
+      <find>OrdererOrg</find>
+      <find>CORE_PEER_TLS_ENABLED</find>
+      <find>networkUp</find>
+      <find>joinChan</find>
+      <find>generateCerts</find>
+      <find>createChannel</find>
+      <find>crypto</find>
+      <find>ca</find>
+      <find>CORE_PEER_TLS_ROOTCERT_FILE</find>
+      <find>ORDERER_CA</find>
+      <find>cbbc_orderer</find>
+      <find>ChannelCapabilities</find>
+      <find>replacePrivateKey</find>
+      <find>joinChannelWithRetry</find>
+      <find>OrgMsp1</find>
+      <find>CC_SRC_PATH</find>
+      <find>CC_NAME</find>
+      <find>networkDown</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/chaincode/cbbc/node/package.json" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/node/models/CompoundModel.js" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/node/cbbc.js" />
+        <option value="$PROJECT_DIR$/fabcar/startFabric.sh" />
+        <option value="$PROJECT_DIR$/cbbc-rest-api/startFabric.sh" />
+        <option value="$PROJECT_DIR$/basic-network/start.sh" />
+        <option value="$PROJECT_DIR$/basic-network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/cbbc-network/installCompound.sh" />
+        <option value="$PROJECT_DIR$/cbbc-network/stop.sh" />
+        <option value="$PROJECT_DIR$/cbbc-network/teardown.sh" />
+        <option value="$PROJECT_DIR$/cbbc-network/generate.sh" />
+        <option value="$PROJECT_DIR$/cbbc-network/start.sh" />
+        <option value="$PROJECT_DIR$/basic-network/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/cbbc-network/docker-compose-ca.yml" />
+        <option value="$PROJECT_DIR$/cbbc-network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/cbbc-network/notes.txt" />
+        <option value="$PROJECT_DIR$/cbbc-network/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/cbbc-network/docker-compose-cli.yml" />
+        <option value="$PROJECT_DIR$/cbbc-network/create_cbbc_channel.sh" />
+        <option value="$PROJECT_DIR$/cbbc-network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/first-network/byfn.sh" />
+        <option value="$PROJECT_DIR$/first-network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/basic-network/generate.sh" />
+        <option value="$PROJECT_DIR$/basic-network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/cbbc-rest-api/installCompound.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/stop.sh" />
+        <option value="$PROJECT_DIR$/cbbc-rest-api/api/hlf-api/FabricHelper.js" />
+        <option value="$PROJECT_DIR$/cbbc-rest-api/api/controllers/compoundController.js" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/compound/node/compound.js" />
+        <option value="$PROJECT_DIR$/workshop-network/restart.sh" />
+        <option value="$PROJECT_DIR$/cbbc-rest-api/api/hlf-api/CompoundService.js" />
+        <option value="$PROJECT_DIR$/workshop-network/teardown.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/uploadData.sh" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/ProductPatent/node/package.json" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/ProductPatent/node/products.js" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/products/node/products.js" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/packages.js/node/package.json" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/packages.js/node/packages.js" />
+        <option value="$PROJECT_DIR$/workshop-network/installCompound.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/installProducts.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/workshop-network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/workshop-network/generate.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/docker-compose-cli.yml" />
+        <option value="$PROJECT_DIR$/workshop-network/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/workshop-network/start.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/docker-compose-ca.yml" />
+        <option value="$PROJECT_DIR$/workshop-network/create_channel.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/installCompounds.sh" />
+        <option value="$PROJECT_DIR$/workshop-network/installPackages.sh" />
+        <option value="$PROJECT_DIR$/chaincode/cbbc/compounds/node/compound.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="173" />
+    <option name="y" value="47" />
+    <option name="width" value="1400" />
+    <option name="height" value="925" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fabric-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-samples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="cbbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="cbbc" type="462c0819:PsiDirectoryNode" />
+              <item name="compounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="cbbc" type="462c0819:PsiDirectoryNode" />
+              <item name="compounds" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="workshop-network" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540876621078" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/workshop-network" />
+      <recent name="$PROJECT_DIR$/chaincode/cbbc" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cbbc-network" />
+      <recent name="$PROJECT_DIR$/cbbc-rest-api" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92ef1bf4-fe69-416b-b28a-c39eb44df05f" name="Default Changelist" comment="" />
+      <created>1539770248591</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539770248591</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1469" height="817" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3078004" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293556" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35610464" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cbbc-network/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="28" column="111" lean-forward="true" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-network/docker-compose-cli.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="23" column="142" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-network/create_cbbc_channel.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="26" column="135" selection-start-line="26" selection-start-column="135" selection-end-line="26" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-throughput/scripts/channel-setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="128" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-network/generate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-network/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="215" column="23" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/docker-compose-e2e-template.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/generate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/crypto-config/peerOrganizations/manufacturer.cbbc.lt/ca/ae87ce268287ca4d02d4b5728b637bf513e2a1ee021ba397a99830160489ac95_sk" />
+    <entry file="file://$PROJECT_DIR$/first-network/scripts/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/scripts/utils.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="100" column="52" lean-forward="true" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3146">
+          <caret line="295" column="1" lean-forward="true" selection-start-line="295" selection-start-column="1" selection-end-line="295" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/docker-compose-e2e.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/base/docker-compose-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="76" column="42" lean-forward="true" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/docker-compose-couch.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabcar/startFabric.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabcar/enrollAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-rest-api/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-rest-api/api/hlf-api/FabricHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="177" column="69" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-rest-api/installCompound.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-rest-api/api/controllers/compoundController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/fabcar/node/fabcar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="153" column="38" lean-forward="true" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/restart.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cbbc-rest-api/api/hlf-api/CompoundService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode-docker-devmode/README.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/stop.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/uploadData.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/cbbc/products/node/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/cbbc/products/node/products.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="103" column="55" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/cbbc/packages/node/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/cbbc/packages/node/packages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/installProducts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/generate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="213" column="28" lean-forward="true" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/teardown.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/docker-compose-ca.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="49" column="53" lean-forward="true" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/create_channel.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/installCompounds.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="334" selection-start-line="21" selection-end-line="21" selection-end-column="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/docker-compose-cli.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/installPackages.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="290" selection-start-line="21" selection-start-column="290" selection-end-line="21" selection-end-column="290" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop-network/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="135" column="36" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-network/byfn.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="238" column="20" selection-start-line="238" selection-start-column="9" selection-end-line="238" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/cbbc/compounds/node/compound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

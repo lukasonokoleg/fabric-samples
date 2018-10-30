@@ -1,0 +1,75 @@
+#
+# Copyright IBM Corp All Rights Reserved
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+version: '2'
+
+networks:
+  basic:
+
+services:
+  ca.manufacturer.cbbc.lt:
+    container_name: ca.manufacturer.cbbc.lt
+    image: hyperledger/fabric-ca
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.manufacturer.cbbc.lt
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.manufacturer.cbbc.lt-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/7b3d9abc77301687fe5aa720b514b88d85f9ffd0d5860c78ec3a624921ffd370_sk
+    ports:
+      - "7054:7054"
+    command: sh -c 'fabric-ca-server start -b admin:adminpw'
+    volumes:
+      - ./crypto-config/peerOrganizations/manufacturer.cbbc.lt/ca/:/etc/hyperledger/fabric-ca-server-config
+    networks:
+      - basic
+
+  ca.retailer.cbbc.lt:
+    container_name: ca.retailer.cbbc.lt
+    image: hyperledger/fabric-ca
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.retailer.cbbc.lt
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.retailer.cbbc.lt-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/7bfa0989ec3673cc7969c73a02e6e414f193fd918e94965c696c8c774ee65e67_sk
+    ports:
+      - "8054:7054"
+    command: sh -c 'fabric-ca-server start -b admin:adminpw'
+    volumes:
+      - ./crypto-config/peerOrganizations/retailer.cbbc.lt/ca/:/etc/hyperledger/fabric-ca-server-config
+    networks:
+      - basic
+
+
+  ca.expeditor.cbbc.lt:
+    container_name: ca.expeditor.cbbc.lt
+    image: hyperledger/fabric-ca
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.expeditor.cbbc.lt
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.expeditor.cbbc.lt-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/91f3652b6a613607842fea09dcb194f3873e30ff8a655ae5de047a1b76239f44_sk
+    ports:
+      - "9054:7054"
+    command: sh -c 'fabric-ca-server start -b admin:adminpw'
+    volumes:
+      - ./crypto-config/peerOrganizations/expeditor.cbbc.lt/ca/:/etc/hyperledger/fabric-ca-server-config
+    networks:
+      - basic
+
+  ca.auditor.cbbc.lt:
+    container_name: ca.auditor.cbbc.lt
+    image: hyperledger/fabric-ca
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.auditor.cbbc.lt
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.auditor.cbbc.lt-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/2c5587c4ea24eda3743d9af9df34ab2970dd4aaf0f6d9bfb579027989f321fd8_sk
+    ports:
+      - "10054:7054"
+    command: sh -c 'fabric-ca-server start -b admin:adminpw'
+    volumes:
+      - ./crypto-config/peerOrganizations/auditor.cbbc.lt/ca/:/etc/hyperledger/fabric-ca-server-config
+    networks:
+      - basic
